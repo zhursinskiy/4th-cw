@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex justify-center items-center bg-slate-50">
+    <div class="container overflow-hidden">
+        <div class="header bg-amber-950 ">
+            <h1 class="text-yellow-100 font-bold p-6 text-xl text-center">Coffee Masters</h1>
+        </div>
+        <div class="general grid grid-cols-2 grid-rows-2 w-[1200px] h-[350px]  ml-10 mt-5 gap-5">
+            <div class="box box1 row-start-1 row-end-3 col-start-1 col-end-2 bg-amber-100 rounded-lg">
+                <div class="items p-6">
+                    <h2 class="text-amber-950">ITEMS</h2>
+                    <div class="row flex justify-between mt-6">
+                        <div class="left flex items-center">
+                            <span>1x</span>
+                            <div class="column flex flex-col ml-7">
+                                <strong>Cappucino</strong>
+                                <span class="text-orange-800">Light Foam</span>
+                            </div>
+                        </div>
+                        <div class="right-price">
+                            <strong>$6.00</strong>
+                        </div>
+                    </div>
+                    <hr class="mt-5">
+                    <div class="row flex justify-between mt-3">
+                        <div class="left flex items-center">
+                            <span>1x</span>
+                            <div class="column flex flex-col ml-7">
+                                <strong>Cappucino</strong>
+                                <span class="text-orange-800">Light Foam</span>
+                            </div>
+                        </div>
+                        <div class="right-price">
+                            <strong>$7.90</strong>
+                        </div>
+                    </div>
+                    <hr class="mt-5">
+                    <div class="row flex justify-between mt-3">
+                        <div class="left flex items-center">
+                            <span>1x</span>
+                            <div class="column flex flex-col ml-7">
+                                <strong>Cappucino</strong>
+                                <span class="text-orange-800">Light Foam</span>
+                            </div>
+                        </div>
+                        <div class="right-price">
+                            <strong>$5.37</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box2 bg-amber-100 row-start-1 row-span-1 col-start-2 col-span-2 rounded-lg">
+                <div class="name p-6">
+                    <h2 class="text-orange-950">NAME</h2>
+                    <input type="text" placeholder="Name for order"
+                        class="bg-orange-950 rounded-full w-[550px] h-1 p-5 mt-5 text-white">
+                </div>
+            </div>
+            <div class="box box3 bg-amber-100 row-start-2 row-end-2 col-start-2 col-span-2 rounded-lg">
+                <div class="name p-6">
+                    <h2 class="text-orange-950">PAYMENT</h2>
+                    <input type="text" placeholder="Card number"
+                        class="bg-orange-950 rounded-full w-[550px] h-0 p-5 mt-3 text-white">
+                    <input type="text" placeholder="Card number"
+                        class="bg-orange-950 rounded-full w-[250px] h-1 p-5 mt-3 text-white">
+                </div>
+            </div>
+        </div>
+        <div class="total flex justify-around mt-8">
+            <div class="left1 flex flex-col">
+                <span>Subtotal:</span>
+                <span>Tax:</span>
+                <strong>Total:</strong>
+            </div>
+            <div class="right1 flex flex-col">
+                <span>$19.27</span>
+                <span>$0.96</span>
+                <strong>$20.23</strong>
+            </div>
+        </div>
+        <button class="bg-orange-300 w-[1200px] rounded-full mt-8 ml-10 p-2">Place order</button>
+    </div>
+
+</body>
+
+</html>
