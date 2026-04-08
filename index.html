@@ -9,11 +9,12 @@
 </head>
 
 <body class="flex justify-center items-center bg-slate-50">
-    <div class="container overflow-hidden">
-        <div class="header bg-amber-950 ">
+    <div class="container overflow-hidden flex flex-col gap-5">
+        <div class="header bg-amber-950">
             <h1 class="text-yellow-100 font-bold p-6 text-xl text-center">Coffee Masters</h1>
         </div>
-        <div class="general grid grid-cols-2 grid-rows-2 w-[1200px] h-[350px]  ml-10 mt-5 gap-5">
+        <div
+            class="general sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:w-[1200px] h-[350px]  sm:ml-10 mt-5 gap-5 sm:gap-5">
             <div class="box box1 row-start-1 row-end-3 col-start-1 col-end-2 bg-amber-100 rounded-lg">
                 <div class="items p-6">
                     <h2 class="text-amber-950">ITEMS</h2>
@@ -57,24 +58,24 @@
                     </div>
                 </div>
             </div>
-            <div class="box box2 bg-amber-100 row-start-1 row-span-1 col-start-2 col-span-2 rounded-lg">
+            <div class="box box2 mt-10 sm:mt-0 bg-amber-100 row-start-1 row-span-1 col-start-2 col-span-2 rounded-lg">
                 <div class="name p-6">
                     <h2 class="text-orange-950">NAME</h2>
                     <input type="text" placeholder="Name for order"
-                        class="bg-orange-950 rounded-full w-[550px] h-1 p-5 mt-5 text-white">
+                        class="bg-orange-950 rounded-full sm:w-[550px] h-1 p-5 mt-5 text-white">
                 </div>
             </div>
-            <div class="box box3 bg-amber-100 row-start-2 row-end-2 col-start-2 col-span-2 rounded-lg">
+            <div class="box box3 mt-10 sm:mt-0 bg-amber-100 row-start-2 row-end-2 col-start-2 col-span-2 rounded-lg">
                 <div class="name p-6">
                     <h2 class="text-orange-950">PAYMENT</h2>
                     <input type="text" placeholder="Card number"
-                        class="bg-orange-950 rounded-full w-[550px] h-0 p-5 mt-3 text-white">
+                        class="bg-orange-950 rounded-full sm:w-[550px] h-0 p-5 mt-3 text-white">
                     <input type="text" placeholder="Card number"
-                        class="bg-orange-950 rounded-full w-[250px] h-1 p-5 mt-3 text-white">
+                        class="bg-orange-950 rounded-full sm:w-[250px] h-1 p-5 mt-3 text-white">
                 </div>
             </div>
         </div>
-        <div class="total flex justify-around mt-8">
+        <div class="total flex justify-around mt-85 sm:mt-5">
             <div class="left1 flex flex-col">
                 <span>Subtotal:</span>
                 <span>Tax:</span>
@@ -86,7 +87,8 @@
                 <strong>$20.23</strong>
             </div>
         </div>
-        <button class="bg-orange-300 w-[1200px] rounded-full mt-8 ml-10 p-2">Place order</button>
+        <button class="bg-orange-300 sm:w-[1200px] w-[500px] rounded-full mt-8 ml-10 p-2 mb-[50px] sm:mb-0">Place
+            order</button>
     </div>
 
 </body>
